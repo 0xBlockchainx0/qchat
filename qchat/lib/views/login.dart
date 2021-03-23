@@ -1,15 +1,15 @@
-import 'package:qchat/views/homeinapp.dart';
 import 'package:qchat/widgets/widget.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:qchat/views/homeinapp.dart';
 
-class SignUp extends StatefulWidget {
-  static String id = 'signup';
+class Login extends StatefulWidget {
+  static String id = 'login';
   @override
-  _SignUpState createState() => _SignUpState();
+  _LoginState createState() => _LoginState();
 }
 
-class _SignUpState extends State<SignUp> {
+class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,45 +32,32 @@ class _SignUpState extends State<SignUp> {
                 children: [
                   TextField(
                     style: mediumTextStyle(),
-                    decoration: textFieldInputDecoration('select username'),
+                    decoration: textFieldInputDecoration('username'),
                   ),
                   TextField(
                     style: mediumTextStyle(),
-                    decoration: textFieldInputDecoration('choose password'),
+                    decoration: textFieldInputDecoration('password'),
                   ),
-                  TextField(
-                    style: mediumTextStyle(),
-                    decoration: textFieldInputDecoration('confirm password'),
-                  ),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  Container(
-                      padding: EdgeInsets.symmetric(horizontal: 14),
-                      alignment: Alignment.center,
-                      child: Text(
-                        "Don't forget your password, it can't be reset",
-                        style: TextStyle(
-                            color: Colors.grey,
-                            fontFamily: 'Quicksand',
-                            fontSize: 10),
-                      )),
-                  Container(
-                      padding: EdgeInsets.symmetric(horizontal: 14),
-                      alignment: Alignment.center,
-                      child: Text(
-                        "We recommend you to store it somewhere safe.",
-                        style: TextStyle(
-                            color: Colors.grey,
-                            fontFamily: 'Quicksand',
-                            fontSize: 10),
-                      )),
                 ],
               ),
             ),
             SizedBox(
-              height: 120,
+              height: 25,
             ),
+            // Container(
+            //   alignment: Alignment.centerRight,
+            //   child: Container(
+            //       padding: EdgeInsets.symmetric(horizontal: 37, vertical: 8),
+            //       child: Text(
+            //         'Forgot Password?',
+            //         style: TextStyle(
+            //             color: Colors.white,
+            //             fontSize: 14,
+            //             fontFamily: 'Quicksand',
+            //             decoration: TextDecoration.underline),
+            //       )),
+            // ),
+            SizedBox(height: 164),
             GestureDetector(
               onTap: () {
                 Navigator.push(
@@ -93,13 +80,28 @@ class _SignUpState extends State<SignUp> {
                   borderRadius: BorderRadius.circular(30),
                 ),
                 child: Text(
-                  'Create account',
+                  'Login',
                   style: mediumTextStyle(),
                 ),
               ),
-            ),
-            SizedBox(
-              height: 16,
+              // SizedBox(
+              //   height: 16,
+              // ),
+              // Container(
+              //   alignment: Alignment.center,
+              //   width: MediaQuery.of(context).size.width - 70,
+              //   padding: EdgeInsets.symmetric(vertical: 20),
+              //   decoration: BoxDecoration(
+              //     color: Colors.white,
+              //     borderRadius: BorderRadius.circular(30),
+              //   ),
+              //   child: Text('Register',
+              //       style: TextStyle(
+              //         color: Colors.black87,
+              //         fontFamily: 'Quicksand',
+              //         fontSize: 17,
+              //       )),
+              // ),
             ),
           ],
         ),

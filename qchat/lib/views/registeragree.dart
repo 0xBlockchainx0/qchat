@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:qchat/views/signup.dart';
 import 'package:qchat/widgets/widget.dart';
+import 'package:page_transition/page_transition.dart';
 
 class RegisterAgree extends StatefulWidget {
+  static String id = 'registeragree';
   @override
   _RegisterAgreeState createState() => _RegisterAgreeState();
 }
@@ -53,21 +56,35 @@ class _RegisterAgreeState extends State<RegisterAgree> {
             SizedBox(
               height: 40,
             ),
-            Container(
-              padding: EdgeInsets.symmetric(
-                vertical: 16,
-              ),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
-                  gradient: LinearGradient(
-                    colors: [const Color(0xFFF06292), const Color(0xff2A75BC)],
-                  )),
-              width: 300,
-              height: 60,
-              child: Text(
-                "Agree and Continue",
-                style: mediumTextStyle(),
-                textAlign: TextAlign.center,
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  PageTransition(
+                    type: PageTransitionType.leftToRight,
+                    child: SignUp(),
+                  ),
+                );
+              },
+              child: Container(
+                padding: EdgeInsets.symmetric(
+                  vertical: 16,
+                ),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    gradient: LinearGradient(
+                      colors: [
+                        const Color(0xFFF06292),
+                        const Color(0xff2A75BC)
+                      ],
+                    )),
+                width: 300,
+                height: 60,
+                child: Text(
+                  "Agree and Continue",
+                  style: mediumTextStyle(),
+                  textAlign: TextAlign.center,
+                ),
               ),
             ),
           ],

@@ -1,12 +1,22 @@
+// import 'package:flutter_search_bar/flutter_search_bar.dart';
 import 'package:flutter/material.dart';
 
 Widget appBarMain(BuildContext context) {
   return AppBar(
-    backgroundColor: Colors.grey,
+    centerTitle: true,
     title: Image.asset(
       'assets/images/logox.png',
-      height: 55,
+      height: 45,
     ),
+    flexibleSpace: Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: <Color>[Colors.pink[400], Colors.blue[400]]),
+      ),
+    ),
+    // actions: [searchBarApp().getSearchAction(context)],
   );
 }
 
