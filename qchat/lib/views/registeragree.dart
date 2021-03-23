@@ -43,18 +43,60 @@ class _RegisterAgreeState extends State<RegisterAgree> {
                       fontSize: 13),
                 )),
             SizedBox(height: 200),
-            Container(
-                padding: EdgeInsets.symmetric(horizontal: 44),
-                alignment: Alignment.center,
-                child: Text(
-                  "Tap 'Agree & Continue' to accept Quarashi Terms of service and Privacy Policy",
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Tap 'Agree & Continue' to accept Quarashi's ",
+                  style: TextStyle(color: Colors.grey, fontSize: 10),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    print('Terms of service');
+                  },
+                  child: Text(
+                    "Terms of service ",
+                    style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 10,
+                        decoration: TextDecoration.underline),
+                  ),
+                ),
+                Text(
+                  'and ',
                   style: TextStyle(
-                      color: Colors.grey,
-                      fontFamily: 'Quicksand',
-                      fontSize: 10),
-                )),
+                    color: Colors.grey,
+                    fontSize: 10,
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    print('Privacy policy');
+                  },
+                  child: Text(
+                    "Privacy Policy",
+                    style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 10,
+                        decoration: TextDecoration.underline),
+                  ),
+                ),
+              ],
+            ),
+            // Row(
+            //               child: Container(
+            //       padding: EdgeInsets.symmetric(horizontal: 44),
+            //       alignment: Alignment.center,
+            //       child: Text(
+            //         "Tap 'Agree & Continue' to accept Quarashi Terms of service and Privacy Policy",
+            //         style: TextStyle(
+            //             color: Colors.grey,
+            //             fontFamily: 'Quicksand',
+            //             fontSize: 10),
+            //       )),
+            // ),
             SizedBox(
-              height: 40,
+              height: 30,
             ),
             GestureDetector(
               onTap: () {
