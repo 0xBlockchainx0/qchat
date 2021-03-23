@@ -84,7 +84,8 @@ class _RegisterAgreeState extends State<RegisterAgree> {
               ],
             ),
             // Row(
-            //               child: Container(
+            //
+            //  child: Container(
             //       padding: EdgeInsets.symmetric(horizontal: 44),
             //       alignment: Alignment.center,
             //       child: Text(
