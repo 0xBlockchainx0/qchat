@@ -59,10 +59,20 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             Container(
                 padding: EdgeInsets.symmetric(horizontal: 50),
                 child: Text(
-                  'In Quarashi App, You control your Data',
+                  'In here,',
                   style: TextStyle(
                       color: Colors.white,
                       fontFamily: 'Quicksand',
+                      fontSize: 16),
+                )),
+            Container(
+                padding: EdgeInsets.symmetric(horizontal: 50),
+                child: Text(
+                  'You control your Data',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Quicksand',
+                      fontWeight: FontWeight.bold,
                       fontSize: 16),
                 )),
             SizedBox(height: 20),
