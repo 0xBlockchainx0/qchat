@@ -57,16 +57,31 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             ),
             SizedBox(height: 1),
             Container(
-                padding: EdgeInsets.symmetric(horizontal: 44),
-                alignment: Alignment.bottomCenter,
+                padding: EdgeInsets.symmetric(horizontal: 50),
                 child: Text(
-                  'Lorem Impsum Dolor Amet',
+                  'In Quarashi App, You control your Data',
                   style: TextStyle(
                       color: Colors.white,
                       fontFamily: 'Quicksand',
-                      fontSize: 15),
+                      fontSize: 16),
                 )),
-            SizedBox(height: 174),
+            SizedBox(height: 20),
+            Container(
+                padding: EdgeInsets.symmetric(horizontal: 50),
+                child: Text(
+                  '100% Anonimty, 100% Privacy, No Backups',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Quicksand',
+                      fontSize: 13),
+                )),
+            // Container(
+            //   padding: EdgeInsets.symmetric(horizontal: 70),
+            //   child: Divider(
+            //     color: Colors.white,
+            //   ),
+            // ),
+            SizedBox(height: 144),
             GestureDetector(
               onTap: () {
                 Navigator.push(
@@ -120,6 +135,29 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                       fontSize: 17,
                     )),
               ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Need help?  ",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Quicksand',
+                      fontSize: 14),
+                ),
+                Text(
+                  "Contact us",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14,
+                      fontFamily: 'Quicksand',
+                      decoration: TextDecoration.underline),
+                ),
+                SizedBox(
+                  height: 56,
+                ),
+              ],
             ),
           ],
         ),
