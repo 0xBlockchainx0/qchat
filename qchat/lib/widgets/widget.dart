@@ -38,3 +38,23 @@ TextStyle simpleTextStyle() {
 TextStyle mediumTextStyle() {
   return TextStyle(color: Colors.white, fontFamily: 'Quicksand', fontSize: 18);
 }
+
+//BUTON ROTUND
+// Container(
+//   child: TextField(
+//       decoration: InputDecoration(
+//           labelText: 'Password',
+//           fillColor: Colors.white,
+//           border: OutlineInputBorder(
+//             borderRadius: BorderRadius.circular(30),
+//             borderSide: BorderSide(
+//               color: Colors.purple,
+//             ),
+//           ),
+//           enabledBorder: OutlineInputBorder(
+//               borderRadius: BorderRadius.circular(30),
+//               borderSide: BorderSide(
+//                 color: Colors.purple,
+//                 width: 2.0,
+//               )))),
+// ),

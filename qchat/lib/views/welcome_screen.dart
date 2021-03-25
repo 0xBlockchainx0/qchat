@@ -47,51 +47,96 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            SizedBox(height: 15),
             Container(
               alignment: Alignment.bottomCenter,
-              height: 300,
-              width: 300,
+              height: 250,
+              width: 220,
               decoration: BoxDecoration(
                   image: DecorationImage(
                       image: ExactAssetImage('assets/images/qlogo1.png'))),
             ),
+            SizedBox(height: 30),
+            Container(
+              alignment: Alignment.bottomCenter,
+              height: 125,
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: ExactAssetImage('assets/images/logoo.png'))),
+            ),
+            Container(
+              alignment: Alignment.center,
+              height: 28,
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: ExactAssetImage('assets/images/logooo.png'))),
+            ),
             SizedBox(height: 1),
-            Container(
-                padding: EdgeInsets.symmetric(horizontal: 50),
-                child: Text(
-                  'In here,',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Quicksand',
-                      fontSize: 16),
-                )),
-            Container(
-                padding: EdgeInsets.symmetric(horizontal: 50),
-                child: Text(
-                  'You control your Data',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Quicksand',
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16),
-                )),
-            SizedBox(height: 20),
-            Container(
-                padding: EdgeInsets.symmetric(horizontal: 50),
-                child: Text(
-                  '100% Anonimty, 100% Privacy, No Backups',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Quicksand',
-                      fontSize: 13),
-                )),
+            // Container(
+            //     padding: EdgeInsets.symmetric(horizontal: 50),
+            //     child: Text(
+            //       'In here,',
+            //       style: TextStyle(
+            //           color: Colors.white,
+            //           fontFamily: 'Quicksand',
+            //           fontSize: 16),
+            //     )),
+            // Container(
+            //     alignment: Alignment.center,
+            //     padding: EdgeInsets.symmetric(horizontal: 50),
+            //     child: Text(
+            //       'YOU',
+            //       style: TextStyle(
+            //           color: Colors.white,
+            //           fontFamily: 'Montserrat',
+            //           fontWeight: FontWeight.normal,
+            //           fontSize: 18),
+            //     )),
+            // Container(
+            //     padding: EdgeInsets.symmetric(horizontal: 50),
+            //     child: Text(
+            //       'CONTROL',
+            //       style: TextStyle(
+            //           color: Colors.white,
+            //           fontFamily: 'Montserrat',
+            //           fontWeight: FontWeight.bold,
+            //           fontSize: 16),
+            //     )),
+            // Container(
+            //     padding: EdgeInsets.symmetric(horizontal: 50),
+            //     child: Text(
+            //       'YOUR',
+            //       style: TextStyle(
+            //           color: Colors.white,
+            //           fontFamily: 'Quicksand',
+            //           fontWeight: FontWeight.bold,
+            //           fontSize: 16),
+            //     )),
+            // Container(
+            //     padding: EdgeInsets.symmetric(horizontal: 50),
+            //     child: Text('DATA',
+            //         style: TextStyle(
+            //             color: Colors.white,
+            //             fontFamily: 'Montserrat',
+            //             fontWeight: FontWeight.bold,
+            //             fontSize: 16))),
+            // SizedBox(height: 20),
+            // Container(
+            //     padding: EdgeInsets.symmetric(horizontal: 50),
+            //     child: Text(
+            //       '100% Anonimty, 100% Privacy, No Backups',
+            //       style: TextStyle(
+            //           color: Colors.white,
+            //           fontFamily: 'Quicksand',
+            //           fontSize: 13),
+            //     )),
             // Container(
             //   padding: EdgeInsets.symmetric(horizontal: 70),
             //   child: Divider(
             //     color: Colors.white,
             //   ),
             // ),
-            SizedBox(height: 144),
+            SizedBox(height: 50),
             GestureDetector(
               onTap: () {
                 Navigator.push(

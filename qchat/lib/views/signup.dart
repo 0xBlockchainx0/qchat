@@ -27,7 +27,7 @@ class _SignUpState extends State<SignUp> {
             SizedBox(height: 1),
             Container(
               alignment: Alignment.bottomCenter,
-              padding: EdgeInsets.symmetric(horizontal: 40),
+              padding: EdgeInsets.symmetric(horizontal: 50),
               child: Column(
                 children: [
                   TextField(
