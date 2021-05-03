@@ -39,6 +39,18 @@ TextStyle mediumTextStyle() {
   return TextStyle(color: Colors.white, fontFamily: 'Quicksand', fontSize: 18);
 }
 
+// class Background extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//       decoration: BoxDecoration(
+//         image: DecorationImage(
+//             image: AssetImage('assets/images/logooooo.jpg'), fit: BoxFit.cover),
+//       ),
+//     );
+//   }
+// }
+
 //BUTON ROTUND
 // Container(
 //   child: TextField(
